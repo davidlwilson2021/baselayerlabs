@@ -1,0 +1,15 @@
+packages:
+  "framer-motion": "For high-quality scroll animations and geometric transitions"
+  "clsx": "Utility for constructing className strings conditionally"
+  "tailwind-merge": "Utility for merging tailwind classes safely"
+  "react-hook-form": "For contact form state management"
+  "@hookform/resolvers": "For contact form validation"
+  "zod": "For contact form schema definition"
+  "lucide-react": "For UI icons"
+
+images: []
+
+notes:
+  - This is a frontend-only landing page. Form submissions are mocked.
+  - Theme is strictly dark mode with copper/gold accents. No purple or blue.
+  - Uses smooth scrolling for navigation between sections.
