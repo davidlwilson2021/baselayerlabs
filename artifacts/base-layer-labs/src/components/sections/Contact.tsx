@@ -110,15 +110,11 @@ export function Contact() {
             <h3 className="text-2xl font-display font-medium mb-8 relative z-10">Secure Transmission</h3>
             
             {isSuccess ? (
-              <motion.div 
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                className="flex flex-col items-center justify-center text-center h-[300px] relative z-10"
-              >
+              <div className="flex flex-col items-center justify-center text-center h-[300px] relative z-10 animate-in fade-in zoom-in-95 duration-300">
                 <CheckCircle2 className="w-16 h-16 text-primary mb-4" />
                 <h4 className="text-xl font-medium text-foreground mb-2">Transmission Received</h4>
                 <p className="text-muted-foreground">Our engineering team will review your inquiry and respond shortly.</p>
-              </motion.div>
+              </div>
             ) : (
               <form onSubmit={handleSubmit(onSubmit)} className="space-y-6 relative z-10">
                 <div className="space-y-2">
