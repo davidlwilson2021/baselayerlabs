@@ -49,7 +49,7 @@ export function Hero() {
               transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
               className="text-lg md:text-xl text-muted-foreground max-w-2xl leading-relaxed mb-12 font-light"
             >
-              Base Layer Labs architects uncompromising, highly scalable systems designed for enterprise ecosystems where performance is non-negotiable.
+              An engineering studio architecting full-stack platforms and applied data systems. Currently building GhostStack &mdash; a serverless productivity stack that converts ad-hoc work-call notes into structured end-of-day reports.
             </motion.p>
 
             <motion.div

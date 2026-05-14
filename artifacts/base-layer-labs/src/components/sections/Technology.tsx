@@ -1,10 +1,10 @@
 import { motion } from "framer-motion"
 
 const metrics = [
-  { value: "99.999%", label: "Uptime SLA" },
-  { value: "<2ms", label: "Global Latency" },
-  { value: "10M+", label: "TPS Capacity" },
-  { value: "AES-256", label: "Encryption" },
+  { value: "First", label: "Principles" },
+  { value: "MS '26", label: "Data Science" },
+  { value: "Solo", label: "Operating Model" },
+  { value: "End-to-End", label: "Type Safety" },
 ]
 
 export function Technology() {
@@ -29,16 +29,16 @@ export function Technology() {
             </div>
             
             <h2 className="text-4xl md:text-5xl font-display font-light text-foreground mb-8 leading-tight">
-              Bypassing the <br />
-              <span className="font-semibold italic">Limitations</span> of legacy systems.
+              Owning the <br />
+              <span className="font-semibold italic">Full Stack,</span> from schema to surface.
             </h2>
-            
+
             <div className="space-y-6 text-muted-foreground font-light leading-relaxed">
               <p>
-                Modern applications are suffocated by decades-old infrastructure paradigms. Base Layer Labs rewrites the fundamental rules of data transit and storage.
+                Most engineering teams pay an invisible tax on integration debt &mdash; the friction between mismatched data models, hand-rolled validation, and contracts that drift over time.
               </p>
               <p>
-                By shifting processing logic to the absolute edge and utilizing custom binary protocols, we eliminate overhead, reduce attack surfaces, and unlock unprecedented operational velocity.
+                We design PostgreSQL schemas, GraphQL and REST contracts, validation layers, and mobile clients as one continuous system. Drizzle, Zod, NestJS, and React Native, wired together so the types flow end to end.
               </p>
             </div>
           </motion.div>

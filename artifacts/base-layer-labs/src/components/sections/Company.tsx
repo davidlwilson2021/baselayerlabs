@@ -30,25 +30,25 @@ export function Company() {
               className="prose prose-invert prose-lg max-w-none prose-p:font-light prose-p:text-muted-foreground prose-p:leading-relaxed"
             >
               <h3 className="text-2xl font-display font-light text-foreground mb-8 leading-normal border-l-2 border-primary pl-6 py-2">
-                "We believe that infrastructure should be invisible, infallible, and instantaneous."
+                "Complex systems should be designed end-to-end, not assembled from defaults."
               </h3>
-              
+
               <p className="mb-6">
-                Founded by a collective of systems engineers, cryptographers, and network architects, Base Layer Labs was established to solve the structural bottlenecks inherent in cloud computing.
+                Base Layer Labs is the engineering studio of Dave Wilson &mdash; a full-stack developer pursuing an MS in Data Science. The work spans mobile platforms, backend services, and data systems, with a focus on production-grade architecture and first-principles thinking.
               </p>
-              
+
               <p className="mb-6">
-                Our approach is deeply rooted in first-principles thinking. We do not layer abstractions on top of existing broken models; we build entirely new primitives. Our thesis is simple: the next generation of global applications requires a fundamentally different foundation.
+                Current focus: GhostStack &mdash; a serverless productivity stack that captures ad-hoc notes from work calls and converts them into structured end-of-day reports. Parallel work on TradeFolio (a React Native and NestJS identity layer for skilled tradespeople) and ongoing study in applied statistics and relational data modeling extend the engineering surface area.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-8 mt-16">
                 <div className="border border-border p-8">
                   <h4 className="text-foreground font-display font-medium mb-3 uppercase tracking-wider text-sm">Engineering Rigor</h4>
-                  <p className="text-sm">We favor strict correctness and verifiable performance over rapid, fragile development cycles.</p>
+                  <p className="text-sm">Strict correctness, type-safe contracts, and verifiable behavior over rapid, fragile output.</p>
                 </div>
                 <div className="border border-border p-8">
-                  <h4 className="text-foreground font-display font-medium mb-3 uppercase tracking-wider text-sm">Design Elegance</h4>
-                  <p className="text-sm">Complexity is the enemy. We abstract profound technical complexity behind starkly simple interfaces.</p>
+                  <h4 className="text-foreground font-display font-medium mb-3 uppercase tracking-wider text-sm">Domain Modeling</h4>
+                  <p className="text-sm">Every system starts with the data model. Schemas, validation, and user surfaces evolve together &mdash; never separately.</p>
                 </div>
               </div>
             </motion.div>

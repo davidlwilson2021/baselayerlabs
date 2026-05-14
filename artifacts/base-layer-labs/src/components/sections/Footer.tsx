@@ -19,38 +19,58 @@ export function Footer() {
               </span>
             </a>
             <p className="text-muted-foreground text-sm max-w-sm font-light">
-              Engineering the absolute foundation for next-generation computing infrastructure. Strict correctness, zero compromise.
+              An engineering studio architecting full-stack platforms and applied data systems. Strict correctness, zero compromise.
             </p>
           </div>
-          
+
           <div>
-            <h4 className="text-foreground font-medium uppercase tracking-widest text-xs mb-6">Architecture</h4>
+            <h4 className="text-foreground font-medium uppercase tracking-widest text-xs mb-6">Surface</h4>
             <ul className="space-y-4">
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Documentation</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">API Reference</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">System Status</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Security Audit</a></li>
+              <li><a href="#product" className="text-sm text-muted-foreground hover:text-primary transition-colors">Capabilities</a></li>
+              <li><a href="#technology" className="text-sm text-muted-foreground hover:text-primary transition-colors">Technology</a></li>
+              <li><a href="#company" className="text-sm text-muted-foreground hover:text-primary transition-colors">Studio</a></li>
+              <li><a href="#contact" className="text-sm text-muted-foreground hover:text-primary transition-colors">Contact</a></li>
             </ul>
           </div>
-          
+
           <div>
-            <h4 className="text-foreground font-medium uppercase tracking-widest text-xs mb-6">Entity</h4>
+            <h4 className="text-foreground font-medium uppercase tracking-widest text-xs mb-6">Connect</h4>
             <ul className="space-y-4">
-              <li><a href="#company" className="text-sm text-muted-foreground hover:text-primary transition-colors">About Us</a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors">Careers <span className="ml-2 text-[10px] text-primary border border-primary/30 px-1.5 py-0.5 uppercase">Hiring</span></a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-flex items-center">Twitter <ArrowUpRight className="w-3 h-3 ml-1" /></a></li>
-              <li><a href="#" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-flex items-center">GitHub <ArrowUpRight className="w-3 h-3 ml-1" /></a></li>
+              <li>
+                <a href="https://github.com/davidlwilson2021" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-flex items-center">
+                  GitHub <ArrowUpRight className="w-3 h-3 ml-1" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/davidwilson78" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-flex items-center">
+                  LinkedIn <ArrowUpRight className="w-3 h-3 ml-1" />
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/davidlwilson2021/ghoststack" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-flex items-center">
+                  GhostStack Repo <ArrowUpRight className="w-3 h-3 ml-1" />
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/davidlwilson2021/tradefolio-beta-app" target="_blank" rel="noopener noreferrer" className="text-sm text-muted-foreground hover:text-primary transition-colors inline-flex items-center">
+                  TradeFolio Repo <ArrowUpRight className="w-3 h-3 ml-1" />
+                </a>
+              </li>
+              <li>
+                <a href="mailto:greyhawkdiesel@gmail.com" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Email
+                </a>
+              </li>
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t border-border pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-muted-foreground">
-            &copy; {new Date().getFullYear()} Base Layer Labs, Inc. All rights reserved.
+            &copy; {new Date().getFullYear()} Base Layer Labs &mdash; Dave Wilson. All rights reserved.
           </p>
           <div className="flex gap-6">
-            <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Privacy Policy</a>
-            <a href="#" className="text-xs text-muted-foreground hover:text-foreground transition-colors">Terms of Service</a>
+            <a href="#hero" onClick={scrollToTop} className="text-xs text-muted-foreground hover:text-foreground transition-colors">Back to Top</a>
           </div>
         </div>
         

@@ -33,15 +33,15 @@ export function Contact() {
 
   const onSubmit = async (data: FormValues) => {
     setIsSubmitting(true)
-    // Simulate API call
-    await new Promise((resolve) => setTimeout(resolve, 1500))
-    console.log("Form data submitted:", data)
-    setIsSubmitting(false)
-    setIsSuccess(true)
-    reset()
-    
-    // Reset success message after 5 seconds
-    setTimeout(() => setIsSuccess(false), 5000)
+    const subject = encodeURIComponent(`Inquiry from ${data.name}`)
+    const body = encodeURIComponent(`${data.message}\n\n— ${data.name}\n${data.email}`)
+    window.location.href = `mailto:greyhawkdiesel@gmail.com?subject=${subject}&body=${body}`
+    setTimeout(() => {
+      setIsSubmitting(false)
+      setIsSuccess(true)
+      reset()
+      setTimeout(() => setIsSuccess(false), 5000)
+    }, 600)
   }
 
   return (
@@ -66,7 +66,7 @@ export function Contact() {
             </h2>
             
             <p className="text-muted-foreground font-light leading-relaxed mb-12 max-w-md">
-              Whether you require early access to the platform or need to discuss custom enterprise integration, our engineering team is ready to connect.
+              Whether you're interested in collaboration on TradeFolio, want to discuss a project, or simply have a question &mdash; the line is open.
             </p>
 
             <div className="space-y-8">
@@ -76,21 +76,21 @@ export function Contact() {
                 </div>
                 <div>
                   <h4 className="text-sm font-medium text-foreground uppercase tracking-widest mb-1">Direct Inlet</h4>
-                  <a href="mailto:systems@baselayer.labs" className="text-muted-foreground hover:text-primary transition-colors">
-                    systems@baselayer.labs
+                  <a href="mailto:greyhawkdiesel@gmail.com" className="text-muted-foreground hover:text-primary transition-colors">
+                    greyhawkdiesel@gmail.com
                   </a>
                 </div>
               </div>
-              
+
               <div className="flex items-start gap-4">
                 <div className="p-3 border border-border bg-card">
                   <MapPin className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <h4 className="text-sm font-medium text-foreground uppercase tracking-widest mb-1">Headquarters</h4>
+                  <h4 className="text-sm font-medium text-foreground uppercase tracking-widest mb-1">Operating From</h4>
                   <p className="text-muted-foreground">
-                    100 Infrastructure Way, Suite 404<br />
-                    San Francisco, CA 94105
+                    Remote &mdash; United States<br />
+                    Available globally
                   </p>
                 </div>
               </div>

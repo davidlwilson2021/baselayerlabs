@@ -1,26 +1,26 @@
 import { motion } from "framer-motion"
-import { Cpu, Shield, Zap, Network } from "lucide-react"
+import { Smartphone, Network, Database, LineChart } from "lucide-react"
 
 const features = [
   {
-    icon: <Cpu className="w-6 h-6 text-primary" />,
-    title: "Quantum Processing",
-    description: "Distributed compute architecture that scales horizontally across global nodes without latency degradation."
-  },
-  {
-    icon: <Shield className="w-6 h-6 text-primary" />,
-    title: "Zero-Trust Architecture",
-    description: "Cryptographically verified interactions at every layer, ensuring absolute data sovereignty and protection."
-  },
-  {
-    icon: <Zap className="w-6 h-6 text-primary" />,
-    title: "Sub-millisecond Routing",
-    description: "Proprietary networking protocols bypassing standard internet bottlenecks for high-frequency operations."
+    icon: <Smartphone className="w-6 h-6 text-primary" />,
+    title: "Mobile Platforms",
+    description: "React Native and Expo applications built with offline-first sync, type-safe APIs, and production-grade architecture from day one."
   },
   {
     icon: <Network className="w-6 h-6 text-primary" />,
-    title: "Elastic Orchestration",
-    description: "Dynamic resource allocation that anticipates workload spikes and provisions autonomously."
+    title: "API Architecture",
+    description: "NestJS and GraphQL services with PostgreSQL, code-first schemas, JWT authentication, and end-to-end validation through Zod."
+  },
+  {
+    icon: <Database className="w-6 h-6 text-primary" />,
+    title: "Data Modeling",
+    description: "Relational schema design and normalization built from first principles. The data model is the product, not an afterthought."
+  },
+  {
+    icon: <LineChart className="w-6 h-6 text-primary" />,
+    title: "Applied Statistics",
+    description: "Graduate-level data science applied to real product surfaces &mdash; inference, modeling, and decision support beyond vanity dashboards."
   }
 ]
 
@@ -46,9 +46,9 @@ export function Product() {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-5xl font-display font-light text-foreground mb-6"
           >
-            Engineered for <br/> Absolute <span className="font-semibold text-primary">Performance.</span>
+            Built from <br/> First <span className="font-semibold text-primary">Principles.</span>
           </motion.h2>
-          
+
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -56,7 +56,7 @@ export function Product() {
             transition={{ delay: 0.2 }}
             className="text-muted-foreground text-lg font-light leading-relaxed max-w-2xl"
           >
-            We don't build generic software. We engineer deeply optimized infrastructure primitives that give enterprise applications an unfair advantage.
+            We don't assemble systems from defaults. We architect domain-specific platforms where the data model, API surface, and user experience are designed together &mdash; not patched together.
           </motion.p>
         </div>
 
