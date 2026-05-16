@@ -23,19 +23,20 @@ A serverless productivity stack that captures ad-hoc notes from work calls and c
 ### TradeFolio
 A React Native + NestJS identity layer for skilled tradespeople. Parallel development alongside GhostStack.
 
+### Base Layer Labs Site
+Marketing and landing page for the studio, deployed on Cloudflare Pages. [github.com/davidlwilson2021/baselayerlabs-site](https://github.com/davidlwilson2021/baselayerlabs-site)
+
 ## This Repo
 
-The marketing and landing page site for Base Layer Labs, deployed to Cloudflare Pages.
+The monorepo for Base Layer Labs infrastructure — API server, client libraries, shared types, and internal tooling.
 
-**Stack:** React 19 · Vite 7 · Tailwind CSS 4 · TypeScript · pnpm workspaces
+**Stack:** TypeScript, pnpm workspaces, Zod
 
 ```bash
 pnpm install
-pnpm --filter @workspace/base-layer-labs run dev
+pnpm dev
 ```
-
-Built output goes to `artifacts/base-layer-labs/dist/public`. Deployed via Cloudflare Pages on push to `master`.
 
 ## Contact
 
-[greyhawkdiesel@gmail.com](mailto:greyhawkdiesel@gmail.com)
+greyhawkdiesel@gmail.com
